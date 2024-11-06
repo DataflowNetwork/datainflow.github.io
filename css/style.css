@@ -15,6 +15,7 @@ html {
   color: #222;
   font-size: 1em;
   line-height: 1.4;
+  font-family: "Lexend", sans-serif;
 }
 
 /*
@@ -245,3 +246,161 @@ textarea {
   }
 }
 
+body { margin: 0}
+
+button {
+  all: unset;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Lexend", "Instrument Sans", sans-serif;
+  font-optical-sizing: auto;
+  line-height: 100%;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  margin-block-end: 0.2em;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+p {
+  font-family: "Lexend", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 1.125rem;
+  font-weight: 300;
+}
+
+section {
+  display: flex;
+  align-items: center;
+  max-width: 100%;
+  padding-inline: 4rem;
+  padding-top: 2rem;
+  padding-bottom: 12rem;
+  justify-content: center;
+}
+
+.centeredText { text-align: center; }
+.stretch { align-items: stretch; }
+
+.card {
+  position: relative;
+  width: 60ch;
+  overflow-wrap: normal;
+  padding: 1.5rem;
+  margin: 1rem;
+}
+
+.horizontalFlex {
+  display: flex;
+  flex-direction: row;
+  gap: 4rem;
+}
+
+.navBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  top: 0;
+  background-color: white;
+  z-index: 1000;
+  position: sticky;
+}
+
+.navLogo {
+  width: 140px;
+}
+
+.swirlyLoopBG {
+  background-image: url("/img/Swirly-loop.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-attachment: fixed;
+  background-position-y: 64px;
+}
+
+.hero {
+  height: 90dvh;
+  justify-content: left;
+}
+
+.glass {
+  background: linear-gradient(280.7deg, rgba(255, 255, 255, 0) -0.02%, rgba(255, 255, 255, 0.1) 94.6%), rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 20px 40px -6px rgba(0,0,0,0.1);
+  border-radius: 12px;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+}
+
+.cardList {
+  list-style-type: none;
+  padding: 1rem;
+  font-size: 1.25rem;
+}
+
+.listCard {
+  text-align: center;
+  padding: 0.5rem;
+  border-radius: 12px;
+  font-weight: 350;
+}
+
+.listConnector {
+  height: 24px;
+  width: 2px;
+  margin-inline: auto;
+  border-left: 2px solid black;
+}
+
+.teamIcons {
+  display: flex;
+  gap: 1rem;
+  margin-top: auto;
+}
+
+.iconButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 100%;
+  &:hover {
+    background-color: rgba(251, 139, 11, 0.16);
+  }
+}
+
+.team {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profileImg {
+  border-radius: 100%;
+  width: 100%;
+  max-width: 250px;
+  aspect-ratio: 1 / 1;
+  border-top: 1px solid white;
+  border-left: 1px solid white;
+  box-shadow: 0 20px 40px -6px rgba(0,0,0,0.1);
+}
+
+#popoLogo {
+  max-width: 200px;
+}
