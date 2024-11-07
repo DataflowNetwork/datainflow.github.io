@@ -285,7 +285,7 @@ section {
   display: flex;
   align-items: center;
   max-width: 100%;
-  padding-inline: 4rem;
+  padding-inline: 4vw;
   padding-top: 2rem;
   padding-bottom: 12rem;
   justify-content: center;
@@ -318,6 +318,7 @@ section {
   background-color: white;
   z-index: 1000;
   position: sticky;
+
 }
 
 .navLogo {
@@ -325,6 +326,7 @@ section {
 }
 
 .swirlyLoopBG {
+  display: block;
   background-image: url("/img/Swirly-loop.svg");
   background-repeat: no-repeat;
   background-size: 100%;
@@ -349,7 +351,8 @@ section {
 
 .cardList {
   list-style-type: none;
-  padding: 1rem;
+  padding-block: 2rem;
+  padding-inline: 1vw;
   font-size: 1.25rem;
 }
 
@@ -361,7 +364,7 @@ section {
 }
 
 .listConnector {
-  height: 24px;
+  height: 4rem;
   width: 2px;
   margin-inline: auto;
   border-left: 2px solid black;
