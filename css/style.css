@@ -246,10 +246,19 @@ textarea {
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body { margin: 0}
 
 button {
   all: unset;
+  border: 2px solid transparent;
+  cursor: pointer;
+  &:focus-visible {
+    border: 2px solid black;
+  }
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -286,19 +295,31 @@ section {
   align-items: center;
   max-width: 100%;
   padding-inline: 4vw;
-  padding-top: 2rem;
-  padding-bottom: 12rem;
+  padding-block: 8rem;
   justify-content: center;
 }
 
 .centeredText { text-align: center; }
 .stretch { align-items: stretch; }
 
+.ctaButton {
+  background-color: rgba(255,165,0,1);
+  padding-block: 0.5rem;
+  padding-inline: 1.5rem;
+  border-radius: 2rem;
+  box-shadow: 0 0 0 0 rgba(0,0,0,0);
+  transition: all 0.5s ease;
+  &:hover {
+    box-shadow: 0 8px 20px -6px rgba(0,0,0,0.2);
+    background-color: rgba(255,183,51,1);
+  }
+}
+
 .card {
   position: relative;
   width: 60ch;
   overflow-wrap: normal;
-  padding: 1.5rem;
+  padding: 2rem;
   margin: 1rem;
 }
 
@@ -337,12 +358,13 @@ section {
 .hero {
   height: 90dvh;
   justify-content: left;
+  padding-bottom: 0;
 }
 
 .glass {
   background: linear-gradient(280.7deg, rgba(255, 255, 255, 0) -0.02%, rgba(255, 255, 255, 0.1) 94.6%), rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
   box-shadow: 0 20px 40px -6px rgba(0,0,0,0.1);
   border-radius: 12px;
   border-left: 1px solid white;
@@ -358,16 +380,19 @@ section {
 
 .listCard {
   text-align: center;
-  padding: 0.5rem;
+  padding-inline: 1.5rem;
+  padding-block: 1rem;
   border-radius: 12px;
-  font-weight: 350;
+  font-weight: 600;
+  width: fit-content;
+  margin-inline: auto;
 }
 
 .listConnector {
-  height: 4rem;
+  height: 3rem;
   width: 2px;
   margin-inline: auto;
-  border-left: 2px solid black;
+  border-left: 2px solid rgba(0,0,0,0.2);
 }
 
 .teamIcons {
@@ -378,6 +403,7 @@ section {
 
 .iconButton {
   display: flex;
+  flex-shrink: 0;
   justify-content: center;
   align-items: center;
   width: 36px;
@@ -392,18 +418,46 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
+  max-width: 300px;
 }
 
 .profileImg {
   border-radius: 100%;
-  width: 100%;
-  max-width: 250px;
+  width: 200px;
+  height: 200px;
   aspect-ratio: 1 / 1;
   border-top: 1px solid white;
   border-left: 1px solid white;
   box-shadow: 0 20px 40px -6px rgba(0,0,0,0.1);
 }
 
+.phone-wrapper {
+  display: flex;
+  gap: 0.5rem;
+  overflow: hidden;
+  white-space: nowrap;
+  max-width: 40px;
+  transition: all 0.5s ease;
+}
+
+.phone-wrapper.visible {
+  max-width: 200px;
+}
+
+.phone-number {
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  text-align: center;
+  color: #333; /* Adjust color as needed */
+}
+
+
+
 #popoLogo {
   max-width: 200px;
+}
+
+#footerText {
+  font-size: 1rem;
+  text-align: center;
 }
