@@ -12,10 +12,10 @@
   <meta name="description" content="">
 
   <meta property="og:title" content="Data In Flow">
-  <meta property="og:type" content="">
-  <meta property="og:url" content="">
-  <meta property="og:image" content="">
-  <meta property="og:image:alt" content="">
+  <meta property="og:description" content="Creating a collective product data network with purpose">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="datainflow.io">
+  <meta property="og:image" content="https://datainflow.io/img/Swirly-loop.svg">
 
   <link rel="icon" href="/img/DataInFlow-favicon.png" sizes="any">
 
@@ -25,10 +25,10 @@
 
 <body class="swirlyLoopBG">
 
-  <div class="navBar">
+  <nav class="navBar">
     <img class="navLogo" src="/img/DataInFlow-logo.svg" alt="Logo for Data In Flow">
-    <a class="contactButton">Contact</a>
-  </div>
+    <button class="ctaButton" id="contactLink" role="link" onclick="location.href='#teamSection'">Contact</button>
+  </nav>
 
   <main class="swirlyLoopBG">
 
@@ -45,21 +45,23 @@
     <section>
       <div class="glass card">
         <div class="content">
-          <h2>Cooperation enabled by technology</h2>
-          <p>We are building a cooperative dynamic network empowered by technology that:</p>
+          <h2 class="centeredText">Cooperation enabled by technology</h2>
+          <p class="centeredText">We are building a cooperative dynamic network empowered by technology that:</p>
         </div>
         <ul class="cardList">
-          <li class="listCard glass">Collects all type of product data from all sorts of touch points and systems</li>
+          <li class="listCard glass">Collects all type of product data</li>
           <li class="listConnector"></li>
-          <li class="listCard glass">captures the meaning and context of the product data</li>
+          <li class="listCard glass">From all sorts of touch points and systems</li>
           <li class="listConnector"></li>
-          <li class="listCard glass">translates it to collective data ontology</li>
+          <li class="listCard glass">Captures it's meaning and context</li>
           <li class="listConnector"></li>
-          <li class="listCard glass">that allows to map it to local ontologies of any receiving points or systems</li>
+          <li class="listCard glass">Translates it to collective data ontology</li>
           <li class="listConnector"></li>
-          <li class="listCard glass">and distribute it in controlled and dynamic manners</li>
+          <li class="listCard glass">Maps it to local ontologies of any recipient</li>
+          <li class="listConnector"></li>
+          <li class="listCard glass">And distribute in controlled and dynamic manner</li>
         </ul>
-        <p>The network allows ontology to grow and transform organically giving it unlimited potential of adaptation in various use cases from internal data management, data analysis, market expansion or product innovation.</p>
+        <p class="centeredText">The network allows ontology to grow and transform organically giving it unlimited potential of adaptation in various use cases from internal data management, data analysis, market expansion or product innovation.</p>
       </div>
     </section>
 
@@ -80,7 +82,7 @@
       </div>
     </section>
 
-    <section class="stretch">
+    <section id="teamSection" class="stretch">
 
       <div class="glass card team">
         <img class="profileImg" src="/img/sjur.jpg" alt="Photo of Sjur">
@@ -89,9 +91,12 @@
           <p>After 20 years in the IT-Industry I am done simply building and ready to start growing. I am exited to grow a global network for distribution of product data and for trade in general.</p>
         </div>
         <div class="teamIcons">
-          <button class="iconButton"><img src="/img/mail-icon.svg" alt=""></button>
-          <button class="iconButton"><img src="/img/phone-icon.svg" alt=""></button>
-          <button class="iconButton"><img src="/img/linkedIn-icon.svg" alt=""></button>
+          <a class="iconButton" href="mailto:sjur@datainflow.io"><img src="/img/mail-icon.svg" alt="Mail Icon"></a>
+          <div class="phone-wrapper" id="phone-sjur">
+            <button class="iconButton" onclick="togglePhoneNumber('phone-sjur')"><img src="/img/phone-icon.svg" alt="Phone Icon"></button>
+            <div class="phone-number">+47 975 93 375</div>
+          </div>
+          <a class="iconButton" href="https://www.linkedin.com/in/sjurba/" target="_blank"><img src="/img/linkedIn-icon.svg" alt="LinkedIn Icon"></a>
         </div>
       </div>
 
@@ -102,9 +107,12 @@
           <p>I believe in new way of entrepreneurship that follows the creative energy bringing new ideas to life. Growing DataInFlow network contributes to building society based on conscious energy exchange.</p>
         </div>
         <div class="teamIcons">
-          <button class="iconButton"><img src="/img/mail-icon.svg" alt=""></button>
-          <button class="iconButton"><img src="/img/phone-icon.svg" alt=""></button>
-          <button class="iconButton"><img src="/img/linkedIn-icon.svg" alt=""></button>
+          <a class="iconButton" href="mailto:magda@datainflow.io"><img src="/img/mail-icon.svg" alt="Mail Icon"></a>
+          <div class="phone-wrapper" id="phone-magda">
+            <button class="iconButton" onclick="togglePhoneNumber('phone-magda')"><img src="/img/phone-icon.svg" alt="Phone Icon"></button>
+            <div class="phone-number">+47 905 42 030</div>
+          </div>
+          <a class="iconButton" href="https://www.linkedin.com/in/magda-prichodko/" target="_blank"><img src="/img/linkedIn-icon.svg" alt="LinkedIn Icon"></a>
         </div>
       </div>
 
@@ -115,14 +123,14 @@
           <p>With a deep belief in Datainflow’s transformative potential, I am genuinely excited to bring our shared vision to life. I am passionate not only about the concept we’re building but also about the journey of making it a reality—a network that truly empowers and benefits every actor involved.</p>
         </div>
         <div class="teamIcons">
-          <button class="iconButton"><img src="/img/mail-icon.svg" alt=""></button>
-          <button class="iconButton"><img src="/img/phone-icon.svg" alt=""></button>
-          <button class="iconButton"><img src="/img/linkedIn-icon.svg" alt=""></button>
+          <a class="iconButton" href="mailto:tom@datainflow.io"><img src="/img/mail-icon.svg" alt="Mail Icon"></a>
+          <a class="iconButton" href="https://www.linkedin.com/in/tomingvoldstad/" target="_blank"><img src="/img/linkedIn-icon.svg" alt="LinkedIn Icon"></a>
         </div>
       </div>
     </section>
     <section></section>
   </main>
+  <footer> <p id="footerText">© 2024 DataInFlow. All rights reserved.</p> </footer>
   <script src="js/app.js"></script>
 
 </body>
