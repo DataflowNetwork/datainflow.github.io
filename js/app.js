@@ -1,3 +1,4 @@
+
 function toggleHiddenContent(id) {
   // Get the clicked element
   const hiddenElement = document.getElementById(id);
@@ -14,7 +15,8 @@ function toggleHiddenContent(id) {
       element.classList.remove("expanded");
     }
   });
-
+  
   // Toggle the visibility of the clicked element
   hiddenElement.classList.toggle("expanded");
+
 }
