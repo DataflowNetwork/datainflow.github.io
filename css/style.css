@@ -567,9 +567,5 @@ section {
 #footerText {
   font-size: 1rem;
   text-align: center;
-}
-
-#footerText {
-  font-size: 1rem;
-  text-align: center;
+  margin-inline: auto;
 }
